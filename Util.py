@@ -17,6 +17,7 @@ from sklearn.pipeline import make_pipeline
 from imblearn.under_sampling import RandomUnderSampler
 from imblearn.over_sampling import RandomOverSampler
 from imblearn.over_sampling import SMOTE
+from imblearn.over_sampling import SMOTEN
 import matplotlib.pyplot as plt
 
 
@@ -26,7 +27,7 @@ def model_evaluation(data,target,sample_method):
     models_to_run = [RandomForestClassifier(), LogisticRegression(),DecisionTreeClassifier(),GradientBoostingClassifier(),KNeighborsClassifier()]
 
     label_encoders = {}
-    for column in ['gender', 'location', 'smoking_history']:
+    for column in ['gender', 'smoking_history']:
         le = LabelEncoder()
         data[column] = le.fit_transform(data[column])
         label_encoders[column] = le
@@ -40,7 +41,8 @@ def model_evaluation(data,target,sample_method):
     sampling_methods = {
         "RandomUnderSampler": RandomUnderSampler(),
         "RandomOverSampler": RandomOverSampler(),
-        "SMOTE": SMOTE()
+        "SMOTE": SMOTE(),
+        "SMOTEN": SMOTEN()
     }
     
     # Check if the sample_method is valid and then apply the corresponding sampling technique
