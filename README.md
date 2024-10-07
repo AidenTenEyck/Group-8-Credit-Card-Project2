@@ -22,7 +22,7 @@ This algorithm could be used as an early warning system in a hospital to quickly
 Files:
   1. ML_Project2.ipynb:
 
--Jupyter notebook containing calls to do data analsis
+-Jupyter notebook containing models and graphs to do data analysis
 
   3. Util.py: 
 
