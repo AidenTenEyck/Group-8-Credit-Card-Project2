@@ -9,5 +9,12 @@ We used five classifiers to analyze the data and train the model such as Logisti
   3. Some of the findings are that a higher level of HbA1c- and higher blood glucose levels can serve as a strong indicator of diabetes. 
   4. There appears to be some correlation between a person's age and if they have diabetes which could indicate that as you get older you have a higher chance of getting diabetes.
   5. Based on key drivers(Balanced Accuracy Score, ROC AUC Scores, True Negatives (Minimization), Recall/F1-Scores) we have selected  random forest for the prediction model.
-     
+
+Classification Report:
+  1. Class 0: (Non-diabetes): 
+  The model has a high precision (0.97) for class 0, meaning that among all instances where the model predicted non-diabetes, 97% were indeed non-diabetes.
+  The recall for class 0 is also high (1.0). This means that our model correctly identified 100% of all actual non-diabetes cases in the dataset.
+  2. Class 1 (Diabetes): 
+  The precision for class 1 is lower around (0.95), which indicates that when the model predicted diabetes, it was correct around 95% of the time.
+
 This algorithm could be used as an early warning system in a hospital to quickly narrow down patients who are at high risk for diabetes, or alternatively it could be used by medication companies by helping them narrow down their target audience to increase the effectiveness of advertisements for their products.
