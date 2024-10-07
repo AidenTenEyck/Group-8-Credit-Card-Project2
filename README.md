@@ -18,3 +18,11 @@ Classification Report:
   The precision for class 1 is lower around (0.95), which indicates that when the model predicted diabetes, it was correct around 95% of the time.
 
 This algorithm could be used as an early warning system in a hospital to quickly narrow down patients who are at high risk for diabetes, or alternatively it could be used by medication companies by helping them narrow down their target audience to increase the effectiveness of advertisements for their products.
+
+Files:
+  1. ML_Project2.ipynb: 
+Jupyter notebook containing calls to do data analsis
+  2. Util.py: 
+Contains common fuctions to run all models for specified tech
+  3. hyper_parameters_tuning.py: 
+Datamine best for kNeighbors, max depth for Random Forest and feature importance.
