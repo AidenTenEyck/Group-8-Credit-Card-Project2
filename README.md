@@ -30,4 +30,4 @@ Files:
 
   4. hyper_parameters_tuning.py:
 
--Datamine best for kNeighbors, max depth for Random Forest and feature importance.
+-Determine best fit for K nearest Neighbors, max depth for Random Forest, and feature importance.
