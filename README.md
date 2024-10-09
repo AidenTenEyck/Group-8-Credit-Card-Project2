@@ -46,7 +46,7 @@ Files:
 
   3. Util.py: 
 
--Contains common fuctions to run all models for specified technique
+-Contains common fuctions  and pipeline to run all models for specified technique
 
   4. hyper_parameters_tuning.py:
 
